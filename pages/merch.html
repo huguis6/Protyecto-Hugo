@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c4cbacb062.js" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <script src="https://kit.fontawesome.com/c4cbacb062.js" crossorigin="anonymous"></script>
+  <title>imagenes</title>
+</head>
+
+<body class="bg-black">
+  <header class="bg-black">
+
+    <!--NAV RESPONSIVE BOOTSRAP-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black text-center justify-content-center">
+      <div class="container-fluid">
+
+        <!--BOTON CUANDO ES RESPONSIVE-->
+        <button class="navbar-toggler navbar-toggler-white bg-info" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
+          <div class="navbar-nav ">
+            <a class="nav-link active text-light opacity-50 border-end border-2" aria-current="page"
+              href="../index.html">Inicio</a>
+            <a class="nav-link bd  text-light opacity-50 border-end border-2" href="../index.html">Equipment</a>
+            <a class="nav-link text-light opacity-50 border-end border-2" href="../index.html">About</a>
+            <a class="nav-link text-light opacity-50 border-end border-2" href="../index.html">Testimonials</a>
+            <a class="nav-link text-light opacity-50 border-end border-2" href="./contacto.html">Contacto</a>
+            <a class="nav-link text-light opacity-50 border-end border-2" href="./help.html">Help</a>
+            <a class="nav-link text-light opacity-50 border-end border-2" href="">Merch</a>
+            <a class="nav-link text-light opacity-50" href="./Planes/planes.html">Planes</a>
+            
+          </div>
+         
+        </div>
+        <a class="nav-link text-light position-absolute top-0 posicion " href="./register.html"><button type="button"
+            class="btn btn-info">Register Now</button></a>
+    </nav>
+    <button id="boton-carrito " class="bg-black border-0"></button>
+										<a class="mobile-hide search-bar-icon" href="#"></a>
+
+
+
+</header>
+
+
+  <main class="mb-5">
+    <div class="header-section container">
+     <div class="logo"></div>
+      <div>
+        <i class="fas fa-shopping-cart cart animate__animated animate__zoomIn" onclick="showCart(this)"></i>
+          <p class="count-product">0</p>
+      </div>
+      <div class="cart-products" id="products-id">
+          <p class="close-btn" onclick="closeBtn()">X</p>
+          <h3>Mi carrito</h3>
+          <div class="card-items">
+              <!-- <div class="item">
+                  <img src="./images/products/keyboard-1.jpg" alt="">
+                  <div class="item-content">
+                      <h5>name of product name of product name of product</h5>
+                      <h5 class="cart-price">45.50$</h5>
+                      <h6>Amount: 3</h6>
+                  </div>
+                  <span>X</span>
+              </div>
+
+              <div class="item">
+                  <img src="./images/products/keyboard-1.jpg" alt="">
+                  <div class="item-content">
+                      <h5>name of product name of product name of product</h5>
+                      <h5 class="cart-price">45.50$</h5>
+                      <h6>Amount: 3</h6>
+                  </div>
+                  <span class="delete-product" data-id="">X</span>
+              </div> -->
+          </div>
+          <h2>Total: $<strong class="price-total">0</strong></h2>
+      </div>
+  </div>
+
+<section class="container animate__animated animate__fadeInDown">
+  <div class="products w-100">
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/RestDayEssentialsSsT-ShirtOnyxGreyA3A8P-GBCY1399_0252152d-6003-472b-83d9-1e1156a1da3b_3840x.jpg" alt="">
+              <p><span>20</span>$</p>
+          </div>
+          <p class="title">Remera Gris Iron Mind</p>
+          <a href="" data-id="1" class="btn-add-cart bg-info">add to cart</a>
+      </div>
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/Training_Pocket-LeggingsBlack-B4A8O-BBBB-2187.357_b1891d36-e9a0-45f0-bb65-ff71076251f8_3840x.jpg" alt="">
+              <p><span>35</span>$</p>
+          </div>
+          <p class="title">Iron Mind Leggins Negros</p>
+          <a href="" class="btn-add-cart bg-info" data-id="2">add to cart</a>
+      </div>
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/PowerCropZipHoodieBlackB3A9X-BBBB-0800_3840x.jpg" alt="">
+              <p><span>15.50</span>$</p>
+          </div>
+          <p class="title">Buzo Negro </p>
+          <a href="" data-id="3" class="btn-add-cart bg-info">add to cart</a>
+      </div>
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/315WovenShortBlackA3A2I-BBBB-0319_3840x.jpg" alt="">
+              <p><span>20.20</span>$</p>
+          </div>
+          <p class="title"> Short Negro</p>
+          <a href="" data-id="4" class="btn-add-cart bg-info">add to cart</a>
+      </div>
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/PowerAop5ShortOzoneBlueA2A8G-UBZ10085_d68ea559-e748-45ad-9634-8a5813a71b89_640x.jpg" alt="">
+              <p><span>19</span>$</p>
+          </div>
+          <p class="title"> Short color celeste</p>
+          <a href="" data-id="5" class="btn-add-cart bg-info">add to cart</a>
+      </div>
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/files/RestDayEssentialsHoodieOnyxGreyA3A8Z-GBCY11_5533a352-981b-4561-afaa-0220767681a6_640x.jpg" alt="">
+              <p><span>45</span>$</p>
+          </div>
+          <p class="title"> Buzo negro oversize</p>
+          <a href="" data-id="6" class="btn-add-cart bg-info">add to cart</a>
+      </div>
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/CrestPant_Slim_LightGreyCoreMarl-A2A4H-GBFG-0634.40copy_640x.jpg" alt="">
+              <p><span>23.99</span>$</p>
+          </div>
+          <p class="title"> Jogging gris posto</p>
+          <a href="" data-id="7" class="btn-add-cart bg-info">add to cart</a>
+      </div>
+      <div class="carts">
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/1367/5207/products/ElevateCyclingShortsREP-L-A0039SandyBrownB3A7I-NBSJ.36_a6a12c46-ceb9-419f-971d-4c6b888ad965_640x.jpg" alt="">
+              <p><span>50</span>$</p>
+          </div>
+          <p class="title"> Cycling Shorts</p>
+          <a href="" data-id="8" class="btn-add-cart bg-info">add to cart</a>
+      </div>
+
+  </div>
+</section>
+
+<footer>
+
+</footer>
+
+<script>
+  function showCart(x){
+      document.getElementById("products-id").style.display = "block";
+  }
+  function closeBtn(){
+       document.getElementById("products-id").style.display = "none";
+  }
+
+</script>
+
+   
+  
+  </main >
+
+  <footer class="text-center border-top border-light">
+
+    <p>Bernardo de Irigoyen 1540, Florida Oeste, <br> Provincia de Buenos Aires © 2023 Iron Mind. All rights reserved.
+    </p>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+
+</html>

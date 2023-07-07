@@ -1,0 +1,17 @@
+
+body main .zi{
+    z-index: 4;
+}
+
+.high{
+    @media screen {
+        
+    }
+    height: 80% ;
+}
+
+footer{
+    position: relative;
+    z-index: -1;
+}
+

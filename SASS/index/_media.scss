@@ -1,0 +1,146 @@
+
+.parrafillo {
+    @media (max-width:700px) {
+        margin: auto;
+        width: 80% !important;
+    }
+}
+main{
+@media (max-width: 760px) {
+  border: none !important;
+}
+}
+
+.estos {
+    @media(max-width: 760px) {
+        flex-wrap: wrap;
+    }
+}
+
+.about {
+    p {
+        @media (max-width:950px) {
+            margin: auto;
+            //Aplico un margin con boostrap y en boostrap todas sus propiedades tienen important asi que para sobreponerme utilizo otro important
+            width: 80% !important;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.eliminar {
+
+    @media (max-width:767px) {
+        //Aplico un margin con boostrap y en boostrap todas sus propiedades tienen important asi que para sobreponerme utilizo otro important
+        margin-right: 0px !important;
+        width: 80% ;
+
+    }
+}
+
+.posicion {
+    @media (max-width:990px) {
+       z-index: 7;
+       top: 0;
+       right: 0;
+       margin-top: 10px;
+       margin-right: 20px;
+    }
+}
+
+.cambiarrrrr
+{
+   width: 75%;
+   @media (max-width:526px) {
+        width: auto;
+   }
+}
+
+.campeon{
+    @media (max-width:991px) {
+
+         //Aplico un margin con boostrap y en boostrap todas sus propiedades tienen important asi que para sobreponerme utilizo otro important
+        margin: auto !important;
+    }
+}.campeon
+{
+    @media (max-width:990px) {
+       margin-right: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    
+    .carousel-item img {
+      width: 80%;
+      height: auto; 
+      overflow: hidden;
+    }
+    .elimino{
+        display: none !important; 
+    }
+  }
+  @media (max-width: 767px) {
+    table {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    main .textos {
+      width: 60%;
+      margin-bottom: 50px !important;
+
+    }
+  }
+  @media (max-width: 440px) {
+    main .textos {
+      width: 60%;
+      margin-bottom: 50px !important;
+      padding: 8px !important;
+
+
+    }
+  }
+  @media (max-width: 768px) {
+    main .textos {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1326px ) {
+    main .achicar {
+      margin: auto;
+            //Aplico un margin con boostrap y en boostrap todas sus propiedades tienen important asi que para sobreponerme utilizo otro important
+            width: 80% !important;
+            margin-bottom: 100px;
+            font-size: 20px !important;
+    }
+  }
+  @media (max-width: 850px) {
+    .horizontal-menu {
+      width: 60% !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .titulo {
+      font-size: 60px; /* Tamaño de fuente para pantallas más pequeñas */
+    }
+  }
+  @media (max-width: 435px) {
+    .titulo {
+      font-size: 40px; /* Tamaño de fuente para pantallas más pequeñas */
+    }
+  }
+  @media (max-width:384px) {
+    body .wrapper img{
+      width: 100% !important;
+      
+    }
+  }
+  @media (max-width:360px) {
+    .campi{
+      padding-right:0px !important ;
+    }
+  }
